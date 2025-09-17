@@ -1,4 +1,5 @@
 -- Death notification form
+---this sql code flattens json file and uploads data into a table 
 select 
 doc::jsonb->>'_id'as id,
 doc::jsonb->>'_rev'as rev,
